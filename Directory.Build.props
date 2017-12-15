@@ -1,0 +1,21 @@
+<Project>
+ 
+  <PropertyGroup>
+    <Authors>Phil Hawkins</Authors>
+    <Description>Bundle .NET Core applications into common Linux packages.</Description>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionSuffix>pre-alpha</VersionSuffix>
+    <Copyright>MIT</Copyright>
+    <PackageProjectUrl>https://phil-harmoniq.github.io/DotNetPkgr</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/phil-harmoniq/DotNetPkgr</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/phil-harmoniq/DotNetPkgr/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageTags>dotnet;pkgr;linux;package;build</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
+    <OutputPath>$(MSBuildThisFileDirectory)/.vscode/build/$(MSBuildProjectName)/bin/$(Configuration)</OutputPath>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)/.vscode/build/$(MSBuildProjectName)/obj</BaseIntermediateOutputPath>
+  </PropertyGroup>
+
+</Project>

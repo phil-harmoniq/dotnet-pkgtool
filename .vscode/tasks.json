@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"type": "shell",
+	"tasks": [
+		{
+			"label": "Build Solution",
+			"command": "dotnet",
+			"args": ["build"],
+			"problemMatcher": "$msCompile",
+			"group": "build"
+		},
+		{
+			"label": "Restore Nuget Packages",
+			"command": "dotnet",
+			"args": ["restore"],
+			"problemMatcher": "$msCompile",
+			"group": "build"
+		},
+		{
+			"label": "Run Unit Tests",
+			"command": "dotnet",
+			"args": ["test", "${workspaceRoot}/DotNetPkgr.Tests/DotNetPkgr.Tests.csproj"],
+			"problemMatcher": "$msCompile",
+			"group": "build"
+		},
+		{
+			"label": "Run System Tests",
+			"command": "dotnet",
+			"args": ["test", "${workspaceRoot}/DotNetPkgr.SystemTests/DotNetPkgr.SystemTests.csproj"],
+			"problemMatcher": "$msCompile",
+			"group": "build"
+		}
+	]
+}

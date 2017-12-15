@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>dotnet-pkgtool</AssemblyName>
+    <PackageId>PkgTool</PackageId>
+    <PackageType>DotnetCliTool</PackageType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Shell.NET" Version="0.2.2"/>
+    <PackageReference Include="Kurukuru" Version="1.0.0"/>
+  </ItemGroup>
+
+</Project>
